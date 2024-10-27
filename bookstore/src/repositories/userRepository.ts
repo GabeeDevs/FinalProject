@@ -22,12 +22,11 @@ export class UserRepository {
     return rows[0] || null;
   }
 
-
-
   // Método para adicionar um novo usuário com senha hashed
-  async addUser(name: string, email: string, password: string): Promise<User> {
+  async addUser(name: string, email: string, passwordHash: string): Promise<User> {
     const queryText = 'INSERT INTO users(name, email, passwordHash) VALUES($1, $2, $3) RETURNING *';
-    const { rows } = await this.pool.query(queryText, [name, email, password]);
+    const { rows } = await this.pool.query(queryText, [name, email, passwordHash]);
     return rows[0];
   }
 }
+

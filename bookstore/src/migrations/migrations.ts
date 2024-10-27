@@ -8,7 +8,7 @@ const createUsersTable = async () => {
         id SERIAL PRIMARY KEY,
         name VARCHAR(100) NOT NULL,
         email VARCHAR(100) UNIQUE NOT NULL,
-        passwordHash VARCHAR(100) NOT NULL
+        passwordhash VARCHAR(100) NOT NULL
       );
     `;
     await client.query(queryText);
@@ -21,3 +21,27 @@ const createUsersTable = async () => {
 };
 
 createUsersTable().then(() => process.exit(0));
+
+
+
+
+
+/* import pool from '../config/database';
+
+const dropUsersTable = async () => {
+  const client = await pool.connect();
+  try {
+    const queryText = `
+      DROP TABLE IF EXISTS users;
+    `;
+    await client.query(queryText);
+    console.log('Tabela "users" removida com sucesso!');
+  } catch (err) {
+    console.error('Erro ao remover tabela:', err);
+  } finally {
+    client.release();
+  }
+};
+
+dropUsersTable().then(() => process.exit(0));
+*/
