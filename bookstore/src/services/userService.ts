@@ -1,6 +1,5 @@
-// Serviço: userService.ts
-import { isValidEmail, isValidName } from '../helpers/validationHelper';
-import { UserRepository } from '../repositories/userRepository';
+import { isValidEmail, isValidName } from "../helpers/validationHelper";
+import { UserRepository } from "../repositories/userRepository";
 
 export class UserService {
   private userRepository: UserRepository;
@@ -9,14 +8,14 @@ export class UserService {
     this.userRepository = new UserRepository();
   }
 
-  async createUser(name: string, email: string, passwordHash: string) {
+  async createUser(name: string, email: string, password: string) {
     if (!isValidName(name)) {
-      throw new Error('Nome inválido');
+      throw new Error("Nome inválido");
     }
     if (!isValidEmail(email)) {
-      throw new Error('Email inválido');
+      throw new Error("Email inválido");
     }
-    return await this.userRepository.addUser(name.charAt(0).toUpperCase() + name.slice(1), email, passwordHash);
+    return await this.userRepository.addUser(name, email, password);
   }
 
   async listUsers() {

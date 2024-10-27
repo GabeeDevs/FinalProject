@@ -8,10 +8,15 @@ curl -X GET http://localhost:3000/users
 
 ### Requisição de Registro
 
-curl -X POST http://localhost:3000/register -H "Content-Type: application/json" -d '{"name": "Pedro", "email": "Pedro@example.com", "password": "senhaSeguraa"}'
+curl -X POST http://localhost:3000/register -H "Content-Type: application/json" -d '{"name": "Jeremias", "email": "Jeremias@example.com", "password": "senhaSeguraa"}'
 
 ### Requisição de login
 
 
-curl -X POST http://localhost:3000/login -H "Content-Type: application/json" -d '{"email": "Cleber@example.com", "password": "senhaSegura"}'
+curl -X POST http://localhost:3000/login -H "Content-Type: application/json" -d '{"email": "Jeremias@example.com", "password": "senhaSegura"}'
+
+
+
+### AUTORIZAÇÃO DE LOGIN
+
 
