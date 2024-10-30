@@ -21,7 +21,8 @@ export class AuthService {
     const user = await this.userRepository.getUserByEmail(email);
     if (!user) throw new Error('Usuário não encontrado');
 
-    const isPasswordValid = comparePassword(password, user.passwordHash);
+    const isPasswordValid = comparePassword(password, user.passwordhash);
+    console.log(user);
     if (!isPasswordValid) throw new Error('Senha incorreta');
 
     createSession(user.id); // Cria a sessão

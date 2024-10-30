@@ -13,7 +13,7 @@ curl -X POST http://localhost:3000/register -H "Content-Type: application/json" 
 ### Requisição de login
 
 
-curl -X POST http://localhost:3000/login -H "Content-Type: application/json" -d '{"email": "Jeremias@example.com", "password": "senhaSegura"}'
+curl -X POST http://localhost:3000/login -H "Content-Type: application/json" -d '{"email": "Jeremias@example.com", "password": "senhaSeguraa"}'
 
 
 
