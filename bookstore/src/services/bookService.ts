@@ -10,8 +10,8 @@ export class BookService {
 
   async createBook(title: string, author: string, price: number) {
     if (!isValidTitle(title)) {
-        throw new Error("Titulo inválido");
-      }
+        throw new Error("Título inválido. Deve ter mais de 3 caracteres.");
+    }
     if (!isValidPrice(price)) {
       throw new Error("Insira um preço valido");
     }
