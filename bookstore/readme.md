@@ -13,7 +13,7 @@
 
 **MODO DE USO**: 
 
-Dentro da pasta do projeto (bookstore), inicialize o npm e instale as dependências básicas:
+Dentro da pasta do projeto (bookstore), inicialize o npm e instale as dependências básicas:  (É PRECISO DO NODE.JS)
 
 
 **1-** npm install express pg dotenv
@@ -26,6 +26,6 @@ Dentro da pasta do projeto (bookstore), inicialize o npm e instale as dependênc
 
 **5-** INICIANDO O SERVIDOR:   src/server.ts
 
-**6-** REQUISIÇÕES: Dentro do arquivo ( resquets.http ) tem seus requests.
+**6-** REQUISIÇÕES: Dentro do arquivo ( resquets.http ) tem seus requests.  (OBS: É PRECISO TER A EXTENSÃO REST CLIENT)
 
 
