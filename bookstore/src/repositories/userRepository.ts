@@ -1,4 +1,3 @@
-// Repositório: userRepository.ts
 import { Pool } from 'pg';
 import pool from '../config/database';
 import { User } from '../models/userModel';
