@@ -1,12 +1,11 @@
 import { Pool } from 'pg';
 
-// Substitua pela sua string de conexão do Render.com
-const connectionString = 'postgresql://gabriel_dev_user:tFRysITUbK0EnDtctwgLZgMbWQyG64bY@dpg-cs2u2dbv2p9s738omhbg-a.oregon-postgres.render.com/gabriel_dev';
+const connectionString = 'postgresql://javascripto_ehga_user:0T25TwfB5gn68b3tau8kZ2oO2PQ84jTD@dpg-csqskmlumphs73d7urq0-a.oregon-postgres.render.com/javascripto_ehga';
 
 const pool = new Pool({
   connectionString,
   ssl: {
-    rejectUnauthorized: false, // Permite conexões SSL não autorizadas
+    rejectUnauthorized: false,
   }
 });
 

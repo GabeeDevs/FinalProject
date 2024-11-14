@@ -21,27 +21,3 @@ const createUsersTable = async () => {
 };
 
 createUsersTable().then(() => process.exit(0));
-
-
-
-
-
-/* import pool from '../config/database';
-
-const dropUsersTable = async () => {
-  const client = await pool.connect();
-  try {
-    const queryText = `
-      DROP TABLE IF EXISTS users;
-    `;
-    await client.query(queryText);
-    console.log('Tabela "users" removida com sucesso!');
-  } catch (err) {
-    console.error('Erro ao remover tabela:', err);
-  } finally {
-    client.release();
-  }
-};
-
-dropUsersTable().then(() => process.exit(0));
-*/

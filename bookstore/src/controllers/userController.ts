@@ -18,7 +18,6 @@ export const addUser = async (req: Request, res: Response) => {
   const { name, email, password } = req.body;
 
   try {
-    // Hash da senha antes de salvar o usuário
     const passwordHash = hashPassword(password);
     const user = await userService.createUser(name, email, passwordHash);
     res.status(201).json(user);

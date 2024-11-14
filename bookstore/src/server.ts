@@ -8,7 +8,6 @@ const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
 
-// Utilizando as rotas de usuários
 app.use(userRoutes, authRoutes, bookRoutes);
 
 app.listen(PORT, () => {
