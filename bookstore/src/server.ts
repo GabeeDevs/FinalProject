@@ -7,7 +7,7 @@ import cors from 'cors';
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-app.use(cors()); // Permitir requisições de qualquer origem
+app.use(cors());
 app.use(express.json());
 
 app.use(express.json());
