@@ -142,4 +142,4 @@ Caso tenha dúvidas, sugestões ou queira contribuir, ficarei muito feliz em ouv
 
 Agradeço novamente pela oportunidade de compartilhar este projeto com vocês!  
 
-**Desenvolvido com dedicação por Gabriel Costa Ramos.**
+**Desenvolvido com dedicação por Gabriel Ramos.**
