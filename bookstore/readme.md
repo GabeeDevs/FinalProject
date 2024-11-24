@@ -66,6 +66,7 @@ cd bookstore
 
 **3.1** -> npm install express pg dotenv
 **3.2** -> npm install --save-dev typescript jest @types/jest ts-jest supertest @types/express
+**3.3** -> npm install cors
 
 ---
 
