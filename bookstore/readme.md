@@ -130,6 +130,11 @@ curl -X GET http://localhost:3000/books
 
 curl -X POST http://localhost:3000/books -H "Content-Type: application/json" -d '{"title": "Isaías 54:17", "author": "Isaías", "price": "59.90"}'
 
+
+**TESTANDO COM SOLICITAÇÕES NO HTML UTILIZANDO A API NO JAVASCRIPT  (OBS: Necessário estar com o servidor do back-end rodando)**
+
+**Link do repositório de Front-End:**
+https://github.com/GabeeDevs/FinalProjectFront
 ---
 
 ## Agradecimentos  
