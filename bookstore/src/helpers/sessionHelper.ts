@@ -1,4 +1,3 @@
-// Simples armazenamento de sessão
 const sessions: { [key: number]: boolean } = {};
 
 export const createSession = (userId: number) => {
